@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Favorites - CINMATCH</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar solid-navbar">
+    <nav class="nav">
+        <a href="index.html">Accueil</a>
+        <a href="favorites.html" class="active">Favorites</a>
+    </nav>
+
+    <button class="menu-btn" onclick="toggleSettings()">☰</button>
+</header>
+
+
+<div class="page">
+    <div class="section-header">
+        <h2 class="section-title">Your Favorites </h2>
+        <p class="section-subtitle">Tous les films que vous avez enregistrés depuis la page d'accueil.</p>
+    </div>
+
+<div id="favoriteMovies" class="favorites-grid"></div>
+</div>
+
+<div id="settingsMenu" class="settings-menu">
+    <button onclick="goToFavorites()"> Favoris</button>
+    <button onclick="window.location.href='rated.html'"> Mes notes</button>
+    <button onclick="window.location.href='preferences.html'"> Mes préférences</button>
+    <button onclick="window.location.href='profile.html'"> Mon profil</button>
+    <button onclick="logout()"> Se déconnecter</button>
+</div>
+
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

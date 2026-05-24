@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon profil - CINMATCH</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar solid-navbar">
+    <nav class="nav">
+        <a href="index.html">Accueil</a>
+    </nav>
+    <button class="menu-btn" onclick="toggleSettings()">☰</button>
+</header>
+
+<div class="page">
+    <div class="profile-container">
+        <div class="profile-avatar">
+            👤
+        </div>
+        <div class="profile-info">
+        <h1 id="profileUsername">Chargement...</h1>
+        <p id="profileEmail" class="profile-email"></p>
+        <p id="profileMember" class="profile-member"></p>
+        </div>
+
+<div class="profile-genres" id="profileGenres"></div>
+
+        <div class="profile-stats" id="profileStats">
+            <div class="stat-card">
+                <span class="stat-number" id="statRatings">0</span>
+                <span class="stat-label">Films notés</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number" id="statFavorites">0</span>
+                <span class="stat-label">Favoris</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number" id="statRecommendations">0</span>
+                <span class="stat-label">Recommandations</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="settingsMenu" class="settings-menu">
+    <button onclick="goToFavorites()"> Favoris</button>
+    <button onclick="window.location.href='rated.html'"> Mes notes</button>
+    <button onclick="window.location.href='preferences.html'"> Mes préférences</button>
+    <button onclick="window.location.href='profile.html'"> Mon profil</button>
+    <button onclick="logout()"> Se déconnecter</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

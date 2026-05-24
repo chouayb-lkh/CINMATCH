@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Préférences - CINMATCH</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+<div class="pref-container">
+    <div class="pref-card">
+
+        <h1>Dites-nous ce que vous aimez </h1>
+        <p class="pref-sub">Sélectionnez vos genres et quelques films pour personnaliser vos recommandations.</p>
+
+        <div class="pref-section">
+            <h2>Genres</h2>
+            <div id="genresList" class="genres"></div>
+        </div>
+
+        <div class="pref-section">
+            <h2>Films</h2>
+            <div id="prefMovies" class="pref-movies"></div>
+        </div>
+
+        <button class="btn-continue" onclick="savePreferences()">Continuer</button>
+
+    </div>
+</div>
+
+<div id="settingsMenu" class="settings-menu">
+    <button onclick="goToFavorites()"> Favoris</button>
+    <button onclick="logout()">Se déconnecte</button>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

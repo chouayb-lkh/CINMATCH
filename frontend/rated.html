@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes films notés - CINMATCH</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar solid-navbar">
+    <nav class="nav">
+        <a href="index.html">Accueil</a>
+        <a href="rated.html" class="active">Mes notes</a>
+    </nav>
+    <button class="menu-btn" onclick="toggleSettings()">☰</button>
+</header>
+
+<div class="page">
+    <div class="section-header">
+        <h2 class="section-title">⭐ Mes films notés</h2>
+        <p class="section-subtitle">Films que vous avez notés — cliquez sur les étoiles pour modifier votre note.</p>
+    </div>
+
+    <div id="ratedMovies" class="rated-grid">
+        <p style="color:#aaa">Chargement...</p>
+    </div>
+</div>
+
+<div id="settingsMenu" class="settings-menu">
+    <button onclick="goToFavorites()"> Favoris</button>
+    <button onclick="window.location.href='rated.html'"> Mes notes</button>
+    <button onclick="window.location.href='preferences.html'"> Mes préférences</button>
+    <button onclick="window.location.href='profile.html'"> Mon profil</button>
+    <button onclick="logout()"> Se déconnecter</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

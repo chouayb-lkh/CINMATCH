@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+*.pkl
+*.db
+cles.env
+.env
+*.env
+test_db.py
+test_llm.py
+test_tmdb.py
+CAHIER DES CHARGES.docx
+Presentation_PFE_Recommandation_Films.pdf
+Rapport_PFE_Recommandation_Films_final.pdf

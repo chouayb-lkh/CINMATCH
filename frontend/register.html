@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Inscription- CINMATCH</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+    <nav class="nav">
+     
+    </nav>
+</header>
+
+<section class="auth-page">
+    <form id="registerForm">
+        <h2>Créer un compte</h2>
+
+       <input type="text" id="fullName" placeholder="Nom complet" required
+oninvalid="this.setCustomValidity('Veuillez entrer votre nom complet')"
+oninput="this.setCustomValidity('')">
+
+<input type="email" id="registerEmail" placeholder="E-mail" required
+oninvalid="this.setCustomValidity('Veuillez entrer un email valide')"
+oninput="this.setCustomValidity('')">
+
+<input type="password" id="registerPassword" placeholder="Mot de passe" required
+oninvalid="this.setCustomValidity('Veuillez entrer un mot de passe')"
+oninput="this.setCustomValidity('')">
+
+<input type="password" id="confirmPassword" placeholder="Confirmer le mot de passe" required
+oninvalid="this.setCustomValidity('Veuillez confirmer votre mot de passe')"
+oninput="this.setCustomValidity('')">
+
+
+        <button type="submit">Créer un compte</button>
+
+        <p class="auth-text">
+            Vous avez déjà un compte ? <a href="login.html">Connexion</a>
+        </p>
+    </form>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

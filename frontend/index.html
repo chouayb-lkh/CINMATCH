@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CINMATCH</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+    <nav class="nav">
+        <a href="index.html" class="active"> Accueil </a>
+      
+    </nav>
+
+    <button class="menu-btn" onclick="toggleSettings()">☰</button>
+</header>
+
+<section class="home fullscreen-home">
+    <div class="hero-image" id="heroImage"></div>
+    <div class="hero-shadow"></div>
+
+    <div class="home-overlay-content">
+        <span class="hero-mini-badge"> 🤖 AI Powered Movies</span>
+
+        <p>
+            Découvrez des films en fonction de vos goûts,
+             de vos genres préférés, et d'une sélection de films.
+        </p>
+
+        <div class="hero-slide-box">
+            <span class="hero-slide-badge">Trending Now</span>
+            <h3 id="heroTitle">Interstellar</h3>
+            <p id="heroDesc">A space adventure beyond time and gravity.</p>
+        </div>
+    </div>
+
+    <div class="hero-controls">
+        <button class="hero-arrow" onclick="prevHeroSlide()">&#10094;</button>
+        <div class="hero-dots" id="heroDots"></div>
+        <button class="hero-arrow" onclick="nextHeroSlide()">&#10095;</button>
+    </div>
+</section>
+
+<!-- Barre de recherche -->
+<div class="search-container">
+    <input 
+        type="text" 
+        id="searchInput" 
+        placeholder=" Rechercher un film..."
+        oninput="searchMovies(this.value)"
+        autocomplete="off"
+        onfocus="this.scrollIntoView({behavior: 'smooth', block: 'center'})"
+    >
+</div>
+
+<div class="page">
+
+    <div class="section-header">
+        <h2 class="section-title"> Tendances mondiales </h2>
+        <p class="section-subtitle">
+           Meilleurs films du moment
+        </p>
+    </div>
+
+    <div id="worldMovies" class="movies-row"></div>
+
+    <div class="section-header">
+        <h2 class="section-title"> Recommandé pour vous</h2>
+        <p class="section-subtitle">
+           Films basés sur vos genres et films sélectionnés.
+        </p>
+    </div>
+
+    <div id="personalMovies" class="movies-row"></div>
+
+</div>
+
+<div id="settingsMenu" class="settings-menu">
+    <button onclick="goToFavorites()"> Favoris</button>
+    <button onclick="window.location.href='rated.html'"> Mes notes</button>
+    <button onclick="window.location.href='preferences.html'"> Mes préférences</button>
+    <button onclick="window.location.href='profile.html'"> Mon profil</button>
+    <button onclick="logout()"> Se déconnecter</button>
+</div>
+
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
